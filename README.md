@@ -12,8 +12,8 @@ The objective of the game is for the yellow beret to collect as many documents a
 it's the same document but every time you pick it up a point is added and it appears randomly
 In another side. To do this, the yellow beret can be moved to the right, left, up
 or down on the screen. In other words, the main objective of the project is to go
-moving the soldier to the right, left, up or down with the <arrow keys
-right>, <left arrow>, <up arrow> or <down arrow>, respectively.
+moving the soldier to the right, left, up or down with the keys
+right arrow, left arrow, up arrow or down arrow, respectively.
 
 For each document collected by the soldier, the player will get a point and another will appear
 again in a random position of the screen.
@@ -29,12 +29,12 @@ collected. In addition, a message will be displayed asking the user to press the
 <SELECT> key to return to the menu that is the title screen.
 The following keys will be used:
 
- • <right arrow> 	key: move the soldier to the right.
- • <left arrow> 	key: move the soldier to the left.
- • <up arrow> 		key: move the soldier up.
- • <down arrow> 	key: move the soldier down.
- • <START> key: 	To start a new game when you are on the title screen.
- • <SELECT> key: 	To return to the title screen from the final screen.
+ • right arrow	key: move the soldier to the right.
+ • left arrow	key: move the soldier to the left.
+ • up arrow 	key: move the soldier up.
+ • down arrow 	key: move the soldier down.
+ • START key: 	To start a new game when you are on the title screen.
+ • SELECT key: 	To return to the title screen from the final screen.
 
 ## Mechanism
 
@@ -48,9 +48,9 @@ sprite 5 16x16 blocks in a 16x80 png. In this way it was easier to implement the
 sprites and we have done it as tiles to make the partition
 
 
-The timing of the <right arrow>, <down arrow>, <left arrow>, <arrow keys
-up> as well as the touch screen, will be done by survey. The <START> and
-<SELECT> will be synchronized by interruption. The rest of the keys, in principle, are not used.
+The scanning of the right arrow, down arrow, left arrow, arrow keys
+up as well as the touch screen, will be done by survey. The START and
+SELECT will be synchronized by interruption. The rest of the keys, in principle, are not used.
 
 The movementSoldier(Soldier * soldier) which is void whose parameter is the soldier defined in the
 data structure, the movement keys go by survey and define the change of position
@@ -74,27 +74,27 @@ It is automatic and you can pause and resume it by pressing the touch screen reg
 game state.
 
 ## Structure
-+ Makefile	File to compile.
-+ audio		Song of the game in .mod file
-+ gfx		Directory that contains the figures for the background and the sprites.
-+ include 	Directory that contains the header files.
+- Makefile	File to compile.
+- audio		Song of the game in .mod file
+- gfx		Directory that contains the figures for the background and the sprites.
+- include 	Directory that contains the header files.
 
-	* define.h			In this file the necessary definitions are added to be able to use more significant names (states, keys,  				  etc).	
-	* rutservs.h		Extern voids of interruptions.
-	* fondos.h			Procedure to initialize the backgrounds and extern voids of the backgrounds.
-	* sprites.h			Initialize Sprite memory, colors and save it into memory.
-	* teclado.h			Variable to store the value of the key pressed and extern int TeclaPulsada().
-	* temporizadores.h	Extern void IntTemp().
+	- define.h		In this file the necessary definitions are added to be able to use more significant names 						(states, keys,etc).	
+	- rutservs.h		Extern voids of interruptions.
+	- fondos.h		Procedure to initialize the backgrounds and extern voids of the backgrounds.
+	- sprites.h		Initialize Sprite memory, colors and save it into memory.
+	- teclado.h		Variable to store the value of the key pressed and extern int TeclaPulsada().
+	- temporizadores.h	Extern void IntTemp().
 
-+ source: Directory that contains the files with the source code.
+- source: Directory that contains the files with the source code.
 
-	* fondos.c			Routines for managing funds.
-	* sprites.c			Routines for handling sprites.
-	* graficos.c		Routines for graphics management.
-	* main.c			Main program.
-	* rutserv.c			The interrupts () routine to program the controllers and initialize the table of Interrupts we encode it in this file.
-	* keyboard.c		Those routines related to keyboard control are included.
-	* temporizadores.c	Those routines related to time control are included.
+	- fondos.c		Routines for managing funds.
+	- sprites.c		Routines for handling sprites.
+	- graficos.c		Routines for graphics management.
+	- main.c		Main program.
+	- rutserv.c		The interrupts () routine to program the controllers and initialize the table of Interrupts we 						encode it in this file.
+	- teclado.c		Those routines related to keyboard control are included.
+	- temporizadores.c	Those routines related to time control are included.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
