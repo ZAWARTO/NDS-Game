@@ -76,7 +76,7 @@ game state.
 ## Structure
 - Makefile ----> File to compile.
 - audio -------> Song of the game in .mod file
-- gfx ---------> Directory that contains the figures for the background and the sprites.
+- gfx ----------> Directory that contains the figures for the background and the sprites.
 - include -----> Directory that contains the header files.
 
   - define.h 
