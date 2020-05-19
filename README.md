@@ -79,22 +79,22 @@ game state.
 - gfx		Directory that contains the figures for the background and the sprites.
 - include 	Directory that contains the header files.
 
-	- define.h ---->	In this file the necessary definitions are added to be able to use more significant names 					     	(states, keys,etc).	
-	- rutservs.h ---->	Extern voids of interruptions.
-	- fondos.h ---->	Procedure to initialize the backgrounds and extern voids of the backgrounds.
-	- sprites.h ---->	Initialize Sprite memory, colors and save it into memory.
-	- teclado.h ---->	Variable to store the value of the key pressed and extern int TeclaPulsada().
-	- temporizadores.h ---->Extern void IntTemp().
+	- define.h ------------> In this file the necessary definitions are added to be able to use more significant names 					     	(states, keys,etc).	
+	- rutservs.h ----------> Extern voids of interruptions.
+	- fondos.h ------------> Procedure to initialize the backgrounds and extern voids of the backgrounds.
+	- sprites.h -----------> Initialize Sprite memory, colors and save it into memory.
+	- teclado.h -----------> Variable to store the value of the key pressed and extern int TeclaPulsada().
+	- temporizadores.h ----> Extern void IntTemp().
 
 - source 	Directory that contains the files with the source code.
 
-	- fondos.c		Routines for managing funds.
-	- sprites.c		Routines for handling sprites.
-	- graficos.c		Routines for graphics management.
-	- main.c		Main program.
-	- rutserv.c		The interrupts () routine to program the controllers and initialize the table of Interrupts we 						encode it in this file.
-	- teclado.c		Those routines related to keyboard control are included.
-	- temporizadores.c	Those routines related to time control are included.
+	- fondos.c ------------> Routines for managing funds.
+	- sprites.c -----------> Routines for handling sprites.
+	- graficos.c ----------> Routines for graphics management.
+	- main.c --------------> Main program.
+	- rutserv.c -----------> The interrupts () routine to program the controllers and initialize the table of Interrupts we 					 encode it in this file.
+	- teclado.c -----------> Those routines related to keyboard control are included.
+	- temporizadores.c ----> Those routines related to time control are included.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
