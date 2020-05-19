@@ -76,7 +76,7 @@ game state.
 - Makefile ----> File to compile.
 - audio -------> Song of the game in .mod file
 - gfx ----------> Directory that contains the figures for the background and the sprites.
-- include ------> Directory that contains the header files.
+- include -----> Directory that contains the header files.
 
   - define.h 
     - In this file the necessary definitions are added to be able to use more significant names (states, keys,etc).		 
