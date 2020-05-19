@@ -73,7 +73,7 @@ game state.
 + gfx		Directory that contains the figures for the background and the sprites.
 + include 	Directory that contains the header files.
 
-	* define.h		In this file the necessary definitions are added to be able to use more names significant (states, keys, etc).	
+	* define.h		In this file the necessary definitions are added to be able to use more significant names (states, keys,  				  etc).	
 	* rutservs.h		Extern voids of interruptions.
 	* fondos.h		Procedure to initialize the backgrounds and extern voids of the backgrounds.
 	* sprites.h		Initialize Sprite memory, colors and save it into memory.
