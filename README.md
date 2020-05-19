@@ -109,8 +109,8 @@ game state.
     - Those routines related to time control are included.
     
 ##State Machine
-![State Machine Diagram]
-(https://github.com/ZAWARTO/NDS-Game/blob/master/State%20Machine%20Diagram.jpeg)
+![State Machine Diagram](https://github.com/ZAWARTO/NDS-Game/blob/master/State%20Machine%20Diagram.jpeg)
+
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
