@@ -86,7 +86,7 @@ game state.
 	- teclado.h		Variable to store the value of the key pressed and extern int TeclaPulsada().
 	- temporizadores.h	Extern void IntTemp().
 
-- source: Directory that contains the files with the source code.
+- source 	Directory that contains the files with the source code.
 
 	- fondos.c		Routines for managing funds.
 	- sprites.c		Routines for handling sprites.
