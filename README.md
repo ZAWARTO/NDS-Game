@@ -45,7 +45,7 @@ main and not in sprites.c. This is useful since spritesheet.png are actually 5 s
 movement status a soldier sprite is displayed and for the document the last one is displayed
 slice (png partition) of dimensions 16x16 pixels corresponding to the dimension of each
 sprite, 5 16x16 blocks in a 16x80 png. In this way it was easier to implement the
-sprites and we have done it as tiles to make the partition
+sprites and I have build it as tiles to make the partition.
 
 The scanning of the right arrow, down arrow, left arrow, arrow keys
 up as well as the touch screen, will be done by survey. The START and
