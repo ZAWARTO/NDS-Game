@@ -30,7 +30,7 @@ SELECT key to return to the menu that is the title screen.
 
 The following keys will be used:
 
- - Right arrow  Move the soldier to the right.
+ - Right arrow  -Move the soldier to the right.
  - Left arrow   Move the soldier to the left.
  - Up arrow 	Move the soldier up.
  - Down arrow 	Move the soldier down.
