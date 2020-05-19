@@ -34,8 +34,8 @@ The following keys will be used:
  - Left arrow ------> Move the soldier to the left.
  - Up arrow -------> Move the soldier up.
  - Down arrow ----> Move the soldier down.
- - START key: ------> To start a new game when you are on the title screen.
- - SELECT key: -----> To return to the title screen from the final screen.
+ - START key: -----> To start a new game when you are on the title screen.
+ - SELECT key: ----> To return to the title screen from the final screen.
 
 ## Mechanism
 
