@@ -26,15 +26,15 @@ The game ends when the stipulated time has passed in each scenario and you pass 
 scenarios which will take you to the CLOUDS screen whose state is called final.
 Once the game is over, the number of documents must be shown on the upper screen
 collected. In addition, a message will be displayed asking the user to press the
-<SELECT> key to return to the menu that is the title screen.
+SELECT key to return to the menu that is the title screen.
 The following keys will be used:
 
- • right arrow	key: move the soldier to the right.
- • left arrow	key: move the soldier to the left.
- • up arrow 	key: move the soldier up.
- • down arrow 	key: move the soldier down.
- • START key: 	To start a new game when you are on the title screen.
- • SELECT key: 	To return to the title screen from the final screen.
+ - right arrow	key: move the soldier to the right.
+ - left arrow	key: move the soldier to the left.
+ - up arrow 	key: move the soldier up.
+ - down arrow 	key: move the soldier down.
+ - START key: 	To start a new game when you are on the title screen.
+ - SELECT key: 	To return to the title screen from the final screen.
 
 ## Mechanism
 
@@ -52,7 +52,7 @@ The scanning of the right arrow, down arrow, left arrow, arrow keys
 up as well as the touch screen, will be done by survey. The START and
 SELECT will be synchronized by interruption. The rest of the keys, in principle, are not used.
 
-The movementSoldier(Soldier * soldier) which is void whose parameter is the soldier defined in the
+The movementSoldier(Soldier  soldier) which is void whose parameter is the soldier defined in the
 data structure, the movement keys go by survey and define the change of position
 the soldier sprite and a state defined in defines.h so that the sprite changes according to
 where you move to simulate movement rotation. 
