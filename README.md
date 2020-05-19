@@ -1,9 +1,9 @@
 # Description
 
  This game made it with [devkitPro](https://devkitpro.org/wiki/Getting_Started) is a good tutorial of low code key scanner handlers, 
- timers, touch screen read handler, sprites and background manage
- and use of music with [maxmod9](https://maxmod.devkitpro.org/). Based on the example [basic-first-game](https://github.com/jdriselvato/NDS-Development/tree/master/examples/Graphics/basic-first-game)
- of [jdriselvato](https://github.com/jdriselvato).
+ timers, touch screen read handler, sprites and background management, use of the VRAM, masks of the
+ interruption and initial directions of care routines
+ and use of music with [maxmod9](https://maxmod.devkitpro.org/). The emulator used to test it is [No$GBA](https://www.nogba.com/no$gba-  download.htm) Based on the example [basic-first-game]    (https://github.com/jdriselvato/NDSDevelopment/tree/master/examples/Graphics/basic-first-game) of [jdriselvato](https://github.com/jdriselvato).
  
 
 ## Game 
