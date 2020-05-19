@@ -38,7 +38,7 @@ The following keys will be used:
 
 ## Mechanism
 
-What is most striking is the data structures that we used at the beginning,
+What is most striking is the data structures that I used at the beginning,
 its function is to use gfx and gfx_frame to name 16 and 8 bit unasigned ints and
 x and y positions of each sprite, for this reason then when starting the sprites we have done it in the
 main and not in sprites.c. This is useful since spritesheet.png are actually 5 sprites and according to each
