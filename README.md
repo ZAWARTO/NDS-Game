@@ -80,7 +80,7 @@ game state.
 - include 	Directory that contains the header files.
 
 	- define.h 
-		-In this file the necessary definitions are added to be able to use more significant names (states, keys,etc).		 
+	  -In this file the necessary definitions are added to be able to use more significant names (states, keys,etc).		 
 	- rutservs.h  
 		-Extern voids of interruptions.
 	- fondos.h ------------> Procedure to initialize the backgrounds and extern voids of the backgrounds.
