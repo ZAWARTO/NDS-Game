@@ -30,12 +30,12 @@ SELECT key to return to the menu that is the title screen.
 
 The following keys will be used:
 
- - Right arrow  -Move the soldier to the right.
- - Left arrow   Move the soldier to the left.
- - Up arrow 	Move the soldier up.
- - Down arrow 	Move the soldier down.
- - START key: 	To start a new game when you are on the title screen.
- - SELECT key: 	To return to the title screen from the final screen.
+ - Right arrow  ----> Move the soldier to the right.
+ - Left arrow   ----> Move the soldier to the left.
+ - Up arrow 	----> Move the soldier up.
+ - Down arrow 	----> Move the soldier down.
+ - START key: 	----> To start a new game when you are on the title screen.
+ - SELECT key: 	----> To return to the title screen from the final screen.
 
 ## Mechanism
 
@@ -79,12 +79,12 @@ game state.
 - gfx		Directory that contains the figures for the background and the sprites.
 - include 	Directory that contains the header files.
 
-	- define.h		In this file the necessary definitions are added to be able to use more significant names 						(states, keys,etc).	
-	- rutservs.h		Extern voids of interruptions.
-	- fondos.h		Procedure to initialize the backgrounds and extern voids of the backgrounds.
-	- sprites.h		Initialize Sprite memory, colors and save it into memory.
-	- teclado.h		Variable to store the value of the key pressed and extern int TeclaPulsada().
-	- temporizadores.h	Extern void IntTemp().
+	- define.h ---->	In this file the necessary definitions are added to be able to use more significant names 					     	(states, keys,etc).	
+	- rutservs.h ---->	Extern voids of interruptions.
+	- fondos.h ---->	Procedure to initialize the backgrounds and extern voids of the backgrounds.
+	- sprites.h ---->	Initialize Sprite memory, colors and save it into memory.
+	- teclado.h ---->	Variable to store the value of the key pressed and extern int TeclaPulsada().
+	- temporizadores.h ---->Extern void IntTemp().
 
 - source 	Directory that contains the files with the source code.
 
