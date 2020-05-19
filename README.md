@@ -80,17 +80,17 @@ game state.
 - include 	Directory that contains the header files.
 
   - define.h 
-    -In this file the necessary definitions are added to be able to use more significant names (states, keys,etc).		 
+    - In this file the necessary definitions are added to be able to use more significant names (states, keys,etc).		 
   - rutservs.h  
-    -Extern voids of interruptions.
+    - Extern voids of interruptions.
   - fondos.h 
-    -Procedure to initialize the backgrounds and extern voids of the backgrounds.
+    - Procedure to initialize the backgrounds and extern voids of the backgrounds.
   - sprites.h 
-    -Initialize Sprite memory, colors and save it into memory.
+    - Initialize Sprite memory, colors and save it into memory.
   - teclado.h 
-    -Variable to store the value of the key pressed and extern int TeclaPulsada().
+    - Variable to store the value of the key pressed and extern int TeclaPulsada().
   - temporizadores.h 
-    -Extern void IntTemp().
+    - Extern void IntTemp().
 
 - source 	Directory that contains the files with the source code.
 
