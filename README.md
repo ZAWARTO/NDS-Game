@@ -10,7 +10,7 @@
 
 The objective of the game is for the yellow beret to collect as many documents as possible,
 it's the same document but every time you pick it up a point is added and it appears randomly
-In another side. To do this, the yellow beret can be moved to the right, left, up
+in another side. To do this, the yellow beret can be moved to the right, left, up
 or down on the screen. In other words, the main objective of the project is to go
 moving the soldier to the right, left, up or down with the keys
 right arrow, left arrow, up arrow or down arrow, respectively.
@@ -18,21 +18,22 @@ right arrow, left arrow, up arrow or down arrow, respectively.
 For each document collected by the soldier, the player will get a point and another will appear
 again in a random position of the screen.
 While playing, the player will be informed on the upper screen of the time it has taken
-in this scenario as well as the number of points obtained. A document is considered to collected
-when the soldier is placed in such a position that its dimensions collide with those of the
+in the current scenario as well as the number of points obtained. A document is considered collected
+when the soldier is placed in such position that its dimensions collide with those of the
 document, the dimensions of both the document and the soldier are 16x16 pixels.
 
-The game ends when the stipulated time has passed in each scenario and you pass all three
-scenarios which will take you to the CLOUDS screen whose state is called final.
-Once the game is over, the number of documents must be shown on the upper screen
-collected. In addition, a message will be displayed asking the user to press the
+The game ends when the stipulated time has passed (15 segs) in each scenario and and you go through 
+all three scenarios which will take you to the NUBES screen whose state is called final.
+Once the game is over, the number of documents collected must be shown on the upper screen. 
+In addition, a message will be displayed asking the user to press the
 SELECT key to return to the menu that is the title screen.
+
 The following keys will be used:
 
- - right arrow	key: move the soldier to the right.
- - left arrow	key: move the soldier to the left.
- - up arrow 	key: move the soldier up.
- - down arrow 	key: move the soldier down.
+ - Right arrow	Move the soldier to the right.
+ - Left arrow	Move the soldier to the left.
+ - Up arrow 	Move the soldier up.
+ - Down arrow 	Move the soldier down.
  - START key: 	To start a new game when you are on the title screen.
  - SELECT key: 	To return to the title screen from the final screen.
 
@@ -47,7 +48,6 @@ slice (png partition) of dimensions 16x16 pixels corresponding to the dimension 
 sprite 5 16x16 blocks in a 16x80 png. In this way it was easier to implement the
 sprites and we have done it as tiles to make the partition
 
-
 The scanning of the right arrow, down arrow, left arrow, arrow keys
 up as well as the touch screen, will be done by survey. The START and
 SELECT will be synchronized by interruption. The rest of the keys, in principle, are not used.
@@ -57,20 +57,20 @@ data structure, the movement keys go by survey and define the change of position
 the soldier sprite and a state defined in defines.h so that the sprite changes according to
 where you move to simulate movement rotation. 
 
-There are a total of five variables Boolean prefixed with cl-, these determine if a console cleanup has already been performed
+There are a total of five bool variables prefixed with cl-, these determine if a console cleanup has already been performed
 to write new text on the top screen, each state changes the cleaning boolean
 from the following state to false so that with the conditional in the following state it performs a
 text cleanup and then each state changes its variable to true so it doesn't repeat cleaning
 continuously and passes to another conditional. 
 
 In the conditional of randomly changing thedocument position is subtracted from the range of random numbers between 0 and 256 and 0
-y 192 which are the maximum x and y positions of the screen, the subtraction is 16 pixels and this avoids
-the document appears off the screen. The other most notable part of the project is the
+and 192 which are the maximum x and y positions of the screen, the subtraction is 16 pixels and this avoids
+the document to appear off the screen. The other most notable part of the project is the
 music implementation, we have made it in .mod format since the maxmod9.h library
 which comes by default can only play that format, .xl and some more so we have
 modified the makefile so that it can create soundbank_bin.h and save soundbank.h in
-memory .mod files from the audio folder and be able to play them, playback at startup
-It is automatic and you can pause and resume it by pressing the touch screen regardless of the
+memory use .mod files from the audio folder and is able to play them, playback at startup
+its automatic and you can pause and resume it by pressing the touch screen regardless of the
 game state.
 
 ## Structure
