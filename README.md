@@ -94,7 +94,7 @@ game state.
 - source	-------> Directory that contains the files with the source code.
 
   - fondos.c 
-    - Routines for managing funds.
+    - Routines for managing backgrounds.
   - sprites.c 
     - Routines for handling sprites.
   - graficos.c 
