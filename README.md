@@ -83,30 +83,30 @@ game state.
   - rutservs.h  
     - Extern voids of interruptions.
   - fondos.h 
-    - Procedure to initialize the backgrounds and extern voids of the backgrounds.
+    - Procedure to initialize the backgrounds and extern voids of the backgrounds print function.
   - sprites.h 
-    - Initialize Sprite memory, colors and save it into memory.
+    - Initialize the sprite memory, colors and save it into memory.
   - teclado.h 
     - Variable to store the value of the key pressed and extern int TeclaPulsada().
   - temporizadores.h 
-    - Extern void IntTemp().
+    - Extern void IntTemp() (automatically called by the interrupt manager).
 
 - source	-------> Directory that contains the files with the source code.
 
   - fondos.c 
     - Routines for managing backgrounds.
   - sprites.c 
-    - Routines for handling sprites.
+    - Routines for handling sprites (save it into memory, palettes, etc).
   - graficos.c 
     - Routines for graphics management.
   - main.c
     - Main program.
   - rutserv.c 
-    - The interrupts () routine to program the controllers and initialize the table of Interrupts in this file.	
+    - The interrupts routine to program the controls and initialize the table of interrupts in this file.	
   - teclado.c 
-    - Those routines related to keyboard control are included.
+    - Those routines related to keys control are included here.
   - temporizadores.c 
-    - Those routines related to time control are included.
+    - Those routines related to the timer control are included here.
     
 ## State Machine
 ![State Machine Diagram](https://github.com/ZAWARTO/NDS-Game/blob/master/State%20Machine%20Diagram.jpeg)
