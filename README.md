@@ -102,7 +102,7 @@ game state.
   - main.c
     - Main program.
   - rutserv.c 
-    - The interrupts routine to program the controls and initialize the table of interrupts in this file.	
+    - The interrupts routines to program the controls and initialize the table of interrupts in this file.	
   - teclado.c 
     - Those routines related to keys control are included here.
   - temporizadores.c 
