@@ -1,8 +1,3 @@
-/*---------------------------------------------------------------------------------
-Este código se ha implementado basándose en el ejemplo "Simple sprite demo" de 
-dovoto y otro de Jaeden Amero
----------------------------------------------------------------------------------*/
-
 #include <nds.h>			//library developed for the nds
 #include <stdio.h>			//c standard library that defines the standard input and output functions
 #include <stdlib.h>			//standard c library for memory reservation and number conversion
@@ -14,25 +9,22 @@ dovoto y otro de Jaeden Amero
 u16* gfxRombo;
 u16* gfxRomboGrande;
 
-
 /* Initialize Sprite memory. */
-void initSpriteMem() {
-
+void initSpriteMem() 
+{
 	//int i;
 	oamInit(&oamMain, SpriteMapping_1D_32, false);
 	oamInit(&oamSub, SpriteMapping_1D_32, false);
 
 	gfxRombo =    oamAllocateGfx(&oamMain, SpriteSize_16x16, SpriteColorFormat_256Color);
 	gfxRomboGrande = oamAllocateGfx(&oamMain, SpriteSize_16x16, SpriteColorFormat_256Color);
-	
 }
-
-
 
 /* Within this function you have to define the color with which each of the 256 will be displayed
  * possible colors on the main screen. The 0 is transparent and the undefined are black.
  */
-void establecerPaletaPrincipal() {
+void establecerPaletaPrincipal() 
+{
                                          // 0: TRANSPARENTE
    SPRITE_PALETTE[1]  = RGB15(31,0,0);   // ROJO:           RGB24={FF,00,00} los pixels con valor 1 aparecen en rojo
    SPRITE_PALETTE[2]  = RGB15(31,31,0);  // AMARILLO:       RGB24={FF,FF,00}
@@ -60,7 +52,6 @@ void establecerPaletaPrincipal() {
    SPRITE_PALETTE[24] = RGB15(31,31,19); // AMARILLO CLARO: RGB24={FF,FF,99}
 }
 
-
 /* Drawn from a 16x16 pixel Sprite */
 
 /* Due to the operation of memory banks, the first four rows
@@ -68,7 +59,6 @@ void establecerPaletaPrincipal() {
  * right, the following the lower left quadrant and the last four
  * rows, the lower right quadrant, as shown to the side.
  */
-
 
 u8 Rombo[256] = 
 {
@@ -132,7 +122,8 @@ u8 RomboGrande[1024] =
 
 /* For each Sprite that you want to bring to the screen, you must do one of these functions. */
 
-void BorrarRombo(int indice, int x, int y) {
+void BorrarRombo(int indice, int x, int y) 
+{
 oamSet(&oamMain, //main graphics engine context
 	indice,  //oam index (0 to 127)  
 	x, y,    //x and y pixle location of the sprite
@@ -168,7 +159,8 @@ oamSet(&oamMain, //main graphics engine context
 oamUpdate(&oamMain);  
 }
 
-void BorrarRomboGrande(int x, int y){
+void BorrarRomboGrande(int x, int y)
+{
 oamSet(&oamMain, //main graphics engine context
 	127,     //oam index (0 to 127)  
 	x, y,    //x and y pixle location of the sprite
@@ -186,7 +178,8 @@ oamSet(&oamMain, //main graphics engine context
 oamUpdate(&oamMain); 
 }
 
-void MostrarRomboGrande (int x, int y){
+void MostrarRomboGrande (int x, int y)
+{
 oamSet(&oamMain, //main graphics engine context
 	127,     //oam index (0 to 127)  
 	x, y,    //x and y pixle location of the sprite
@@ -205,9 +198,10 @@ oamUpdate(&oamMain);
 }
 
 
-void guardarSpritesEnMemoria(){ //Save sprites in memory
-	
-int i;
+void guardarSpritesEnMemoria()
+{ 
+	//Save sprites in memory
+	int i;
 	//for 16 * 16 sprites
 	for(i = 0; i < 16 * 16 / 2; i++) 
 	{	
@@ -219,5 +213,3 @@ int i;
 		gfxRomboGrande[i] = RomboGrande[i*2] | (RomboGrande[(i*2)+1]<<8);				
 	}
 }
-
-
