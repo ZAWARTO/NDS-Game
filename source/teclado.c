@@ -2,22 +2,21 @@
  teclado.c
 -------------------------------------*/
 
-
 #include <nds.h>
 #include <stdio.h>
 #include "defines.h"
 #include "sprites.h"
 #include "fondos.h"
 
+// Return values assigned to the NDS keys, if none is pressed, returns -1
+int  TeclaPulsada() 
+{
+   	// Values: 
+   	// A=0; B=1; Select=2; Start=3; Der=4; Izq=5;
+   	// Arriba=6; Abajo=7; R=8; L=9;
+   	// -1 en otros casos
 
-// Return values ​​assigned to the NDS keys, if none is pressed, returns -1
-int  TeclaPulsada() {
-   // Values: 
-   // A=0; B=1; Select=2; Start=3; Der=4; Izq=5;
-   // Arriba=6; Abajo=7; R=8; L=9;
-   // -1 en otros casos
-
-if((~TECLAS_DAT & 0x01)!= 0)return A;
+	if((~TECLAS_DAT & 0x01)!= 0)return A;
 	else if((~TECLAS_DAT & 0x02)!= 0)return B;
 	else if((~TECLAS_DAT & 0x04)!= 0)return SELECT;
 	else if((~TECLAS_DAT & 0x08)!= 0)return START;
@@ -28,7 +27,6 @@ if((~TECLAS_DAT & 0x01)!= 0)return A;
 	else if((~TECLAS_DAT & 0x100)!= 0)return R;
 	else if((~TECLAS_DAT & 0x200)!= 0)return L;
 	else return -1;
-
 }
 
 int contador;
@@ -36,22 +34,20 @@ int estado;
 int tecla;
 int documentos;
 bool posicionar;
-// Attention routine to keyboard interruption
+// Attention routine to keyboard interruptions
 void IntTec() {
 	tecla = TeclaPulsada();
-	if(tecla == START && estado == INICIO){
+	if(tecla == START && estado == INICIO)
+	{
 		posicionar = true;
 		MostrarPRADO();
 		estado=PRADO;
 	}
 
-	if(tecla == SELECT && estado == FINAL){
+	if(tecla == SELECT && estado == FINAL)
+	{
 		MostrarINICIO();
 		estado = INICIO;
 		documentos = 0;	
-		
 	}
-
 }
-
-
